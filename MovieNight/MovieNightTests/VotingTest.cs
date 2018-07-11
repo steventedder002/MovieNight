@@ -19,14 +19,22 @@ namespace MovieNightTests
         }
 
         [Fact]
-        public void Test_VotingMovie()
+        public void Test_VotingPeople()                             //testing to see if someone made a vote
         {
-            var expected = 1;
+            var expected = 0;
             var sut = new Voting();
-            var actual = sut.Movies;
+            var actual = sut.People;
 
-            Assert.True(typeof(List<Movie>) == actual.GetType());
+            Assert.True(typeof(List<Person>) == actual.GetType());
             Assert.True(expected <= actual.Count);
+        }
+
+        [Fact]
+        public void Test_VotingMovie()                                   //testing to see at least one movie will be seen
+        {
+            var sut = new Voting();
+
+            Assert.NotNull(sut.Movie);
         }
     }
 }
