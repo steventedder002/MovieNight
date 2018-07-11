@@ -8,9 +8,18 @@ namespace MovieNight.Library.Models
 {
     public class Voting : AModel
     {
+        public List<Movie> Movies
+        {
+            get;
+            set;
+        }
+
         public Voting()
         {
-            
+            Movies = new List<Movie>()
+            {
+                new Movie()
+            };
         }
     }
 }
