@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MovieNight.Library\MovieNight.Library.csproj" />
+  </ItemGroup>
+
 </Project>
