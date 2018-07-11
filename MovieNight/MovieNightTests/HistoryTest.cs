@@ -17,5 +17,16 @@ namespace MovieNightTests
 
             Assert.True(expected == actual.GetType());
         }
+
+        [Fact]
+        public void Test_HistoryMovieList()             //checking to see if at least one movie has been seen
+        {
+            var expected = 1;
+            var sut = new History();
+            var actual = sut.Movies;
+
+            Assert.True(typeof(List<Movie>) == actual.GetType());
+            Assert.True(expected <= actual.Count);
+        }
     }
 }

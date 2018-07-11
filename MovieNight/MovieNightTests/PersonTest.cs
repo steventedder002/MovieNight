@@ -17,5 +17,13 @@ namespace MovieNightTests
 
             Assert.True(expected == actual.GetType());
         }
+
+        [Fact]
+        public void Test_PersonHistory()                            //Testing if the person exists
+        {
+            var sut = new Person();
+
+            Assert.NotNull(sut.History);
+        }
     }
 }

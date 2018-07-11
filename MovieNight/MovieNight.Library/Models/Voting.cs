@@ -10,7 +10,7 @@ namespace MovieNight.Library.Models
     {
         public Voting()
         {
-
+            
         }
     }
 }

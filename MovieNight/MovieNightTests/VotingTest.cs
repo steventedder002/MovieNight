@@ -14,7 +14,7 @@ namespace MovieNightTests
             var expected = typeof(Guid);                //setting what we expect the test to actually product
             var sut = new Voting();
             var actual = sut.Id;
-
+            
             Assert.True(expected == actual.GetType());
         }
     }
